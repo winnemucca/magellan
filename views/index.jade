@@ -1,0 +1,21 @@
+include layout
+
+
+h1 #{explorer}'s Voyage
+
+h3 #{place}
+
+if (problem)
+	h3	Problem : Magellan didn't travel here
+else
+	h3 Magellan traveled here
+
+if (link)
+
+	a(href=link) Next Stop
+form(method="post" action="/submission")
+	input(name="place" type="text")
+	input(type='submit')
+
+
+	
